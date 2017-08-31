@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 namespace ExpressionTokenizer {
 
     enum TokenCategory {
-        NUMBER, PLUS, TIMES, MINUS, DIVIDEND, EOF, BAD_TOKEN
+        NUMBER, PLUS, TIMES, MINUS, EOF, BAD_TOKEN
     }
 
     class Token {
@@ -60,9 +60,11 @@ namespace ExpressionTokenizer {
                 case "PLUS": 
                     s.Push((temp1 + temp2));
                     break;
+                
                 case "TIMES": 
                     s.Push((temp1 * temp2));
                     break;
+                
                 case "MINUS": 
                     s.Push((temp1 - temp2));
                     break;
@@ -76,16 +78,28 @@ namespace ExpressionTokenizer {
             Stack<int> stack = new Stack<int>();
 
             foreach (Token t in scanner.Start()) {
-                //Console.WriteLine(t.Value);
+                //Console.WriteLine(t.Category);
                 switch((t.Category).ToString()){
+                    case "PLUS":
+                        sharmuta(ref stack, (t.Category).ToString());
+                        continue;
+                    
+                    case "MINUS":
+                        sharmuta(ref stack, (t.Category).ToString());
+                        continue;
+                    
                     case "NUMBER":
                         stack.Push(Int32.Parse(t.Lexeme));
-                        break;
+                        continue;
+                    
+                    case "TIMES":
+                        sharmuta(ref stack, (t.Category).ToString());
+                        continue;
+                    
                     case "BAD_ TOKEN":
                         Console.WriteLine($"Error, BAD TOKEN");
-                        return;
+                        return;        
                     default:
-                        sharmuta(ref stack, (t.Category).ToString());
                         break;
                 }
 
