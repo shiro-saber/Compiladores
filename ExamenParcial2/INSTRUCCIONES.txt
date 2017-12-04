@@ -1,0 +1,17 @@
+
+se probo contra los siguientes ejemplos y dieron el siguiente output
+an_atom	syntax ok
+{}	syntax ok
+(this, is, a, list)	syntax ok
+{<[()]>}	syntax ok
+({a},<funny>,([looking],[list]),[],<>,{},())	syntax ok
+((),()) syntax ok
+([aaasd],{asd,asd}) syntax ok
+
+*	syntax error
+(an, unclosed, list	syntax error
+[wrongly, delimited, list)	syntax error
+<list with missing commas>	syntax error
+[] outside_atom	syntax error
+(),() syntax error
+([],[],) syntax error
