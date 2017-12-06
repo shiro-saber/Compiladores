@@ -1,0 +1,41 @@
+/* multi line coment*/
+// singññasdóóóóóó
+
+var
+idiota;
+kuz(){}
+zain(hola){}
+sharmuta(hola, adios){}
+zain(){
+  var hola ;
+}
+hola();
+hola(adio ) {}
+hola = 5 + 7;
+adios = "asd";
+/* multi line coment*/
+// variables con acento
+if(adios){
+// hey chino aki hay un mensaje "oculto"
+ pene = 5;
+}else_if(piru)
+{
+jew= 8;
+// el jew hace el trabajo del chino
+}else_if(piru)
+{
+//la piru hace el trabajo del chino
+chino_gordo_y_borracho= 8;
+}
+else {
+/*
+  el chino no va a leer este archivo
+ */
+ pene = 8;
+}
+
+/* multi line coment*/
+// el gordo se durmio
+//
+
+algo != pito && algo == 5;

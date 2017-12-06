@@ -1,0 +1,14 @@
+
+// Returns the largest element in the array list referred by handle a.
+max_array(a) {
+    var max, x;
+    max = 0x8000000000000000; // This is the smallest number for a 64-bit int.
+
+    return max;
+}
+
+main() {
+    var array, sum, max;
+
+
+}

@@ -1,0 +1,49 @@
+main() {
+
+var element;
+var algo;
+algo= true;
+
+element = 4;
+
+if (algo)
+{
+  element = 6;
+}
+if (element == 1) {
+element = 6;
+
+}else if(element == 6)
+{
+  element = 8;
+}
+else{
+element = 0;
+}
+      /*
+
+if (element <= 100) {
+
+}
+
+
+if (element >= 100) {
+
+}
+
+
+if (element != 100) {
+
+}
+
+
+if (element < 100) {
+
+}
+
+if (element > 100) {
+
+}*/
+
+
+}

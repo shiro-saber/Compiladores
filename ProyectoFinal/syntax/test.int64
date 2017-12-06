@@ -1,0 +1,37 @@
+
+//probando el puto switch
+
+
+  var result, remainder;
+
+switch (Jaime)
+ {
+/* Switch de la homosexualidad de JAIME*/
+
+case true, 1 : algo
+default :
+
+ }
+
+while(true)
+{
+
+
+}
+
+if (true) {}
+
+
+do{  } while(algo == 1);
+
+//for(piruja in true
+
+
+switch (x) {
+case 1, 2, 3:
+    y = 0;
+case 4:
+    y = 1;
+default:
+    y = 2;
+}
